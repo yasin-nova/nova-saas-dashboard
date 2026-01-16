@@ -1,4 +1,3 @@
-import React from 'react';
 import { LayoutDashboard, Users, Settings, BarChart3, LogOut } from 'lucide-react';
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebase';
