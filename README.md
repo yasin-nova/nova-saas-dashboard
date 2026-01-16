@@ -1,73 +1,68 @@
-# React + TypeScript + Vite
+# 🚀 Nova SaaS Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Nova SaaS Dashboard is a modern, responsive, and full-stack admin panel designed for managing customer data and monitoring system metrics. Built with **React, TypeScript, and Firebase**.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://nova-saas-dashboard.vercel.app](BURAYA_VERCEL_LINKINI_YAPISTIR)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📸 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project demonstrates a production-ready dashboard architecture including authentication, protected routes, and real-time database operations.
 
-## Expanding the ESLint configuration
+### ✨ Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **🔐 Secure Authentication:** Full login/logout system using Firebase Auth.
+- **🛡️ Protected Routes:** Dashboard is inaccessible without a valid session.
+- **⚡ Real-time Data:** Instant updates using Firebase Firestore.
+- **👥 Customer Management:** Full CRUD (Create, Read, Delete) capabilities for customer records.
+- **🎨 Modern UI:** Built with **Tailwind CSS** for a sleek, responsive design.
+- **📱 Fully Responsive:** Works seamlessly on desktop, tablet, and mobile.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* **Frontend:** React (Vite), TypeScript
+* **Styling:** Tailwind CSS, Lucide React (Icons)
+* **Backend:** Firebase (Authentication & Firestore)
+* **Deployment:** Vercel
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 How to Run Locally
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+If you want to run this project on your local machine, follow these steps:
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/yasin-nova/nova-saas-dashboard.git](https://github.com/yasin-nova/nova-saas-dashboard.git)
+    cd nova-saas-dashboard
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Configure Environment Variables**
+    Create a `.env` file in the root directory and add your Firebase config:
+    ```env
+    VITE_FIREBASE_API_KEY=your_api_key
+    VITE_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+    VITE_FIREBASE_PROJECT_ID=your_project_id
+    # ... (other firebase config)
+    ```
+
+4.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+---
+
+## 👨‍💻 Author
+
+**Yasin** *Full Stack Developer & Data Analyst*
+
+---
