@@ -2,16 +2,16 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-// BURADAKİLERİ KENDİ FIREBASE PROJENDEN ALIP DEĞİŞTİR
+// Verileri .env dosyasından çekiyoruz 
 const firebaseConfig = {
-  apiKey: "AIzaSyCbsLR-kmHbRxjSynR2k1D7wUJdrv7AoLA",
-  authDomain: "nova-saas-dashboard.firebaseapp.com",
-  projectId: "nova-saas-dashboard",
-  storageBucket: "nova-saas-dashboard.firebasestorage.app",
-  messagingSenderId: "440375523547",
-  appId: "1:440375523547:web:f6a1e84ab1c0b592f334fe"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-export const db = getFirestore(app); // İleride veri eklemek için lazım olacak
+export const db = getFirestore(app);
