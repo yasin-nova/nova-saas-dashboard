@@ -2,7 +2,12 @@
 
 Nova SaaS Dashboard is a modern, responsive, and full-stack admin panel designed for managing customer data and monitoring system metrics. Built with **React, TypeScript, and Firebase**.
 
-🔗 **Live Demo:** [https://nova-saas-dashboard.vercel.app](BURAYA_VERCEL_LINKINI_YAPISTIR)
+🔗 **Live Demo:** [https://nova-saas-dashboard.vercel.app]
+
+### 🔑 Demo Credentials (Try it out!)
+Use these credentials to log in and test the live application:
+- **Email:** `admin@nova.com`
+- **Password:** `122112`
 
 ---
 
